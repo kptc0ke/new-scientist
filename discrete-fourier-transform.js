@@ -14,7 +14,10 @@ function dft(data) {
   for (let n = 0; n < 5; n += 1) { // here we choose 5 component waves
     A_n[n] = 0
     B_n[n] = 0
-    // x: spacial frequency (choosing variable t as temperal frequency devided by L could be confusing because here L is data length not wave period)
+    // x: spacial frequency (choosing variable t as temperal frequency 
+    // devided by L could be confusing because here L is data length not wave period)
+    // L can be seen as length/period of one complete cycle, x=vt
+    // x or t, doesn't affect calculation, just make more sense 
     for (let x = 0; x < L; x += 1) {
       // because n is also index of array
       // don't confuse n and n+1, frequency start from 1 time
