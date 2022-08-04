@@ -16,7 +16,7 @@ function dft(data) {
     B_n[n] = 0
     // x: spacial frequency
     // choose variable t as temperal frequency 
-    // devided by L could be confusing 
+    // devided by L could be confusing
     // because here L is data.length not wave period
     // L can be treated as length/period of one complete cycle
     // x=vt
