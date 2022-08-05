@@ -36,6 +36,7 @@ function dft(data) {
   
   // L/2 vs L
   // https://www.thefouriertransform.com/series/coefficients.php
+  // https://medium.com/sho-jp/fourier-transform-101-part-1-b69ea3cb4837
   A_n = A_n.map(el => el / (L/2))
   B_n = B_n.map(el => el / (L/2))
   
