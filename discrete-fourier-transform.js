@@ -10,7 +10,8 @@ function dft(data) {
   let B_n = []
   
   // n: how many times of input signal frequency
-  // first component wave is called the fundamental, it has the same frequency as input signal 
+  // first component wave is called the fundamental, it has the same frequency as input signal
+  // data is over one cycle, n could be seen as frequency 
   for (let n = 0; n < 5; n += 1) { // here we choose 5 component waves
     A_n[n] = 0
     B_n[n] = 0
