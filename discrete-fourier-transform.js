@@ -34,13 +34,8 @@ function dft(data) {
     if (Math.abs(B_n[n]) < 1e-10) B_n[n] = 0
   }
   
-  // L/2 vs L: multiply component and input signal
-  // is to find the contribution each point in component to the input signal 
-  // sum all contributions and average by /L
-  // look at the synthesis equation
-  // in fact, L/2 isn't necessary
-  // compose the synthesis equation then /2 is the same
-  // because sin and cos applied two iterations on input signal 
+  // L/2 vs L
+  // https://www.thefouriertransform.com/series/coefficients.php
   A_n = A_n.map(el => el / (L/2))
   B_n = B_n.map(el => el / (L/2))
   
